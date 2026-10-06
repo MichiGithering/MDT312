@@ -6,7 +6,12 @@
 window.onload = pageLoad;
 
 function pageLoad() {
-    
+     const form = document.getElementById("myRegister");
+    if (form) {
+        form.onsubmit = validateForm;
+    }
+
+    loadStoredData();   
 }
 
 function validateForm(event) {
@@ -16,9 +21,11 @@ function validateForm(event) {
     const password = passwords[0].value;
     const retypePassword = passwords[1].value;
 
-    // 1. ตรวจสอบว่า Password ทั้ง 2 ช่องตรงกันหรือไม่ ถ้าไม่ตรงกันให้แจ้งเตือน และให้return false
-    if (password != retypePassword)
+// 1. ตรวจสอบว่า Password ทั้ง 2 ช่องตรงกันหรือไม่ ถ้าไม่ตรงกันให้แจ้งเตือน และให้return false
+    if (password !== retypePassword)
     {
+        errorMsg.textContent = "รหัสไม่ตรงกัน";
+        alert("รหัสไม่ตรงกัน");
         return false;
     }
 
