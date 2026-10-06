@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit&family=Poppins&display=swap');
+
+
+body {
+    background: linear-gradient(135deg, #fff2f2 0%, #eee2c2 60%, #fcf8ea 100%);
+    font-family: 'Outfit', 'Poppins', sans-serif;
+	color: #eee3c5;
+    margin: 0;
+    padding: 30px 15px;
+    min-height: 100vh;
+	font-size: 20px;
+}
+h1{
+    font-family: "Helvetica Neue", 'Outfit', 'Poppins', sans-serif;
+	font-weight: bolder;
+	font-size: 100px;
+	color: #eee2c2;
+}
+li{
+	text-align: left;
+}
+
+.image-undertext{
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+    display: block;
+    margin: 0 auto;
+}
+.image-steps{
+	border-radius: 12px;
+	border: #eee2c2;
+	width: auto;
+	max-width: 150px;
+	flex-shrink: 100%;
+}
+.image-right {
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+    display: block;
+    margin: 0 auto;
+}
+.image-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 8px;
+}
+.grid-container {
+	display: grid;
+        grid-template-columns: 35% auto;
+        grid-template-rows: auto auto auto;
+		gap: 10px;
+}
+
+.grid-card {
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.grid-container > div{
+    background: linear-gradient(135deg, rgb(192, 80, 72) 0%, rgb(150, 65, 59) 100%);
+    border-radius: 20px;
+    grid-template-columns: auto auto auto;
+    gap: 14px;
+    padding: 10px 15px;
+}
+
+#header{
+	grid-row: 1 / span 1;
+	grid-column: 1 / span 2;
+    text-align: center;
+    padding: 20px;
+}
+
+#main1{
+	grid-row: 2 / span 1;
+    grid-column: 1 / span 1;
+    text-align: center;
+}
+
+#main2{
+	grid-row: 3 / span 1;
+    grid-column: 1 / span 2;
+    text-align: center;
+}
+#right{
+	grid-row: 2 / span 1;
+    grid-column: 2 / span 1;
+    text-align: center;
+}
+
+#footer{
+	    grid-column: 1 / span 2;
+    text-align: center;
+}
+
+@media only screen and (max-width: 768px) {
+	.grid-container {
+	grid-template-columns: auto auto;
+        grid-template-rows: auto auto auto auto;
+    gap: 14px;
+    padding: 0 10px;
+		  
+	}
+
+#header{
+	grid-row: 1 / span 1;
+	grid-column: 1 / span 3;
+    text-align: center;
+    padding: 20px;
+}
+
+#main1{
+	grid-row: 2 / span 1;
+    grid-column: 1 / span 1;
+    text-align: center;
+	margin: 0px 0px;
+}
+
+#main2{
+	grid-row: 2 / span 3;
+    grid-column: 2 / span 1;
+    text-align: center;
+}
+#right{
+	grid-row: 3 / span 1;
+    grid-column: 1 / span 1;
+    text-align: center;
+}
+
+#footer{
+	grid-row: 4/span 1;
+	grid-column: 1 / span 1;
+    text-align: center;
+}
+}
+
+@media only screen and (max-width: 480px) {
+	.grid-container {
+	grid-template-columns: auto;
+        grid-template-rows: auto auto auto auto auto;
+    gap: 14px;
+    padding: 0 10px;
+		 
+	}
+#header{
+	grid-row: 1 / span 1;
+	grid-column: 1 / span 1;
+    text-align: center;
+    padding: 20px;
+}
+
+#main1{
+	grid-row: 3 / span 1;
+    grid-column: 1 / span 1;
+    text-align: center;
+}
+
+#main2{
+	grid-row: 4 / span 1;
+    grid-column: 1 / span 1;
+    text-align: center;
+}
+#right{
+	grid-row: 2 / span 1;
+    grid-column: 1 / span 1;
+    text-align: center;
+}
+
+#footer{
+	grid-row: 5 / span 1;
+	grid-column: 1 / span 1;
+    text-align: center;
+}
+}

@@ -1,0 +1,72 @@
+h1{
+    background-color: #0a285f;
+    color: rgb(204, 174, 91);
+    font-family: Garamond, 'Times New Roman', Times, serif;
+    font-size: 500%;
+    
+    box-shadow: 0 10px 25px rgba(0,0,0,0.06);
+    border-radius: 12px;
+}
+
+h2 {    
+    color: #0a285f;
+    font-family: Garamond, 'Times New Roman', Times, serif;
+    font-size: 24px;
+}
+
+
+div{
+    text-align: center;
+}
+div>p {
+    
+    text-align: center;
+}
+
+
+div table{
+    text-align: center;
+}
+
+#iconImage
+{
+    width: 10%;
+    vertical-align: middle;
+}
+
+.circle-frame {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid rgb(204, 174, 91); /* Optional: Adds a solid frame border */
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    max-width: 2000px;
+    background-color: #ffffff;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.06);
+    border-radius: 12px;
+}
+td {
+    text-align: left;
+}
+
+th {
+    background-color: #0a285f;
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 16px;
+    letter-spacing: 0.5px;
+}
+
+td {
+    border-bottom: 1px solid #f0f4f8;
+    color: #4a5568;
+    font-size: 15px;
+}
+
+.table_Border {
+    border: 3px solid #ffde00;}

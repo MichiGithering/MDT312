@@ -1,0 +1,38 @@
+[
+	{
+		"brand": "A.K.O.O Clothing",
+		"price":"200",
+		"img":"pic/top1.jpg"},
+	{
+		"brand": "B.K.T Clothing",
+		"price":"500",
+		"img":"pic/top2.jpg"},
+	{
+		"brand": "J.A.L Clothing",
+		"price":"350",
+		"img":"pic/top3.jpg"},
+	{
+		"brand": "D.I.T Clothing",
+		"price":"350",
+		"img":"pic/top4.jpg"},
+	{
+		"brand": "Sphere's Clothing",
+		"price":"400",
+		"img":"pic/top5.jpg"},
+	{
+		"brand": "Everyday Clothing",
+		"price":"200",
+		"img":"pic/top6.jpg"},
+	{
+		"brand": "RED Clothing",
+		"price":"400",
+		"img":"pic/top7.jpg"},
+	{
+		"brand": "Odele Clothing",
+		"price":"300",
+		"img":"pic/top8.jpg"},
+	{
+		"brand": "Donka Clothing",
+		"price":"500",
+		"img":"pic/top9.jpg"}
+	]
