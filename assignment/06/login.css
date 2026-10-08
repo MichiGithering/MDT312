@@ -67,7 +67,6 @@ input[type="button"],
     font-weight: bold;
     text-decoration: none;
     text-align: center;
-    cursor: pointer;
     transition: background-color 0.2s, transform 0.15s;
 }
 

@@ -66,23 +66,20 @@ input[type="radio"] {
 }
 
 input[type="submit"],
-input[type="reset"] {
+input[type="reset"], .login{
+    display: inline-block;
     border: none;
-
     padding: 10px 18px;
-
     border-radius: 8px;
-
     font-family: inherit;
     font-size: 14px;
     font-weight: bold;
-
-    cursor: pointer;
-
+    text-decoration: none;
+    text-align: center;
     transition: background-color 0.2s, transform 0.15s;
 }
 
-input[type="submit"] {
+input[type="submit"] ,.login{
     background-color: rgba(141, 108, 0, 0.87);
     color: whitesmoke;
 }
