@@ -56,15 +56,8 @@ input[type="date"] {
 
     border: 2px solid rgb(210, 196, 153);
     border-radius: 8px;
-
-    background-color: rgb(255, 253, 247);
-
-    font-family: inherit;
     font-size: 15px;
 
-    outline: none;
-
-    transition: border-color 0.2s, box-shadow 0.2s;
 }
 
 input[type="radio"] {
