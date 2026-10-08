@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit&family=Poppins&display=swap');
+
+body {
+    font-family: "Helvetica Neue", 'Outfit', 'Poppins', sans-serif;
+    background-color: rgb(245, 240, 224);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+}
+
+.container {
+    background-color: white;
+    width: 100%;
+    max-width: 1600px;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    padding: 40px;
+    
+}
+
+h1 {
+    font-size: 80px;
+    font-weight: bold;
+    color: rgb(179, 130, 41);
+    text-align: center;
+}
+
+h2{
+    font-size: 40px;
+    font-weight: bold;
+    color: rgb(179, 130, 41);
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.status-soon{
+    font-size: 45px;
+    font-weight: bold;
+    color: rgb(105, 105, 105);
+    text-align: center;
+
+    margin: 10px 15% 10px 15%;
+display: block;
+    background-color: white;
+    padding: 15px 50px;
+    border-radius: 16px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+.status-indev{
+    font-size: 45px;
+    font-weight: bold;
+    color: rgb(238, 214, 92);
+    text-align: center;
+
+        margin: 10px 15% 10px 15%;
+display: block;
+    background-color: white;
+    padding: 15px 50px;
+    border-radius: 16px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+p{
+    font-size: 18px
+}
+
+.description{
+    font-size: 15px;
+}
+
+.status-complete{
+    font-size: 45px;
+    font-weight: bold;
+    color: rgb(33, 135, 43);
+    text-align: center;
+
+        margin: 10px 15% 10px 15%;
+display: block;
+    background-color: white;
+    padding: 15px 50px;
+    border-radius: 16px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+.status-discon{
+    font-size: 45px;
+    font-weight: bold;
+    color: rgb(110, 45, 45);
+    text-align: center;
+
+        margin: 10px 15% 10px 15%;
+display: block;
+    background-color: white;
+    padding: 15px 50px;
+    border-radius: 16px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+.section {
+    background-color: rgb(245, 240, 224);
+    border-radius: 12px;
+    padding-left: 7%;
+    padding-right: 7%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}

@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&family=Poppins:wght@400;600&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Outfit', 'Poppins', sans-serif;
+    background-color: rgb(245, 240, 224);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px;
+}
+
+h1#top {
+    color: rgb(179, 130, 41);
+    margin: 0 0 10px 0;
+    text-align: center;
+}
+
+hr {
+    width: 100%;
+    max-width: 500px;
+    border: none;
+    border-top: 1px solid #d4cca9;
+    margin: 12px 0;
+}
+
+#topic, #reply1, #reply2 {
+    width: 100%;
+    max-width: 500px;
+    min-height: 24px;
+    font-size: 16px;
+    color: #333333;
+    padding: 4px 8px;
+    word-break: break-word;
+}
+
+textarea#message {
+    width: 100%;
+    max-width: 500px;
+    height: 80px;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #c2b998;
+    font-family: inherit;
+    font-size: 14px;
+}
+
+button {
+    padding: 8px 20px;
+    font-size: 14px;
+    font-weight: 600;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    margin: 5px;
+}
+
+#postbutton {
+    background-color: rgb(179, 130, 41);
+    color: #ffffff;
+}
+
+#clearbutton {
+    background-color: #d9d2be;
+    color: #333333;
+}

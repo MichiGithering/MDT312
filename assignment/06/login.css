@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit&family=Poppins&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Helvetica Neue", 'Outfit', 'Poppins', sans-serif;
+    background-color: rgb(245, 240, 224);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+form {
+    width: 100%;
+    max-width: 560px;
+
+    background-color: white;
+
+    border-radius: 16px;
+
+    padding: 30px;
+
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.30);
+}
+
+fieldset {
+    margin: 0;
+    border: 3px solid rgb(179, 130, 41);
+    border-radius: 12px;
+
+    padding: 25px;
+}
+
+legend {
+    padding: 0 12px;
+
+    font-size: 30px;
+    font-weight: bold;
+
+    color: rgb(179, 130, 41);
+}
+
+input[type="submit"],
+input[type="reset"],
+.register {
+    color: Black;
+    border: none;
+
+    padding: 10px 18px;
+
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+input[type="submit"]:hover {
+    background-color: rgb(122, 96, 0);
+}
+
+input[type="reset"]:hover {
+    background-color: rgb(191, 173, 126);
+}
+
+input[type="button"]:hover {
+    background-color: rgb(145, 101, 27);
+}
+
+input[type="submit"]:active,
+input[type="reset"]:active,
+input[type="button"]:active {
+    transform: scale(0.97);
+}
+
+#errormsg {
+    color: rgb(145, 40, 30);
+}
+
