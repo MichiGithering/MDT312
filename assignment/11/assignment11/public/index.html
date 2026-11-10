@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="th">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Assignment 11 — ลูกค้า</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- โหลด Socket.IO ก่อน customer.js และเริ่มผูก DOM ใน window.onload -->
+    <script src="/socket.io/socket.io.js" defer></script>
+    <script src="customer.js" defer></script>
+  </head>
+  <body data-page="customer">
+    <main class="single-page">
+      <h1 class="assignment-title">Assignment 11</h1>
+      <div id="message" class="notice" role="status" hidden></div>
+      <section class="customer">
+        <div class="section-title">
+          <div>
+            <p class="eyebrow">CUSTOMER</p>
+            <h2>เลือกความอร่อย</h2>
+          </div>
+          <span class="live-dot">● <span id="connection">กำลังเชื่อมต่อ</span></span>
+        </div>
+        <div class="table-row">
+          <label for="table-select">🪑 คุณนั่งโต๊ะไหน?</label
+          ><select id="table-select" aria-label="เลือกโต๊ะ"></select>
+        </div>
+        <div class="menu-heading">
+          <h3>เมนูแนะนำ <span id="menu-count"></span></h3>
+          <span>อร่อยง่าย ๆ ทุกวัน</span>
+        </div>
+        <div id="menu" class="menu-grid"></div>
+        <form id="order-form" class="order-summary">
+          <div class="summary-head">
+            <h3>🧾 สรุปรายการของคุณ</h3>
+            <span id="summary-table">โต๊ะ 01</span>
+          </div>
+          <div class="selected-row">
+            <div>
+              <strong id="selected-name">เลือกอาหารจากเมนูด้านบน</strong
+              ><small id="selected-price">คลิกเมนูที่อยากทานเพื่อเริ่มสั่ง</small>
+            </div>
+            <div class="stepper">
+              <button type="button" id="minus" aria-label="ลดจำนวน">−</button
+              ><output id="quantity">1</output
+              ><button type="button" id="plus" aria-label="เพิ่มจำนวน">+</button>
+            </div>
+          </div>
+          <div class="total-row">
+            <span>ยอดรวม <small>ชำระที่ร้าน</small></span
+            ><strong id="total">฿0.00</strong>
+          </div>
+          <button class="submit-button" id="submit" disabled>
+            ส่งออเดอร์เข้าครัว <span>↗</span>
+          </button>
+        </form>
+        <div class="tracking-head">
+          <div>
+            <h3>ออเดอร์ของโต๊ะคุณ</h3>
+            <small>อัปเดตอัตโนมัติ</small>
+          </div>
+          <button type="button" id="clear-table" class="clear-button" disabled>
+            ⌫ Clear โต๊ะ 01
+          </button>
+        </div>
+        <div id="customer-orders" class="customer-orders"></div>
+      </section>
+    </main>
+    <dialog
+      id="clear-dialog"
+      aria-labelledby="clear-title"
+      aria-describedby="clear-description"
+    >
+      <h2 id="clear-title">Clear โต๊ะ</h2>
+      <p id="clear-description"></p>
+      <!-- <p class="clear-note">
+        รายการ Done จะยังอยู่ในประวัติ ส่วนรายการที่ยังไม่ Done จะถูกลบโดยไม่เก็บประวัติ
+      </p> -->
+      <div class="dialog-actions">
+        <button type="button" id="cancel-clear">กลับ</button
+        ><button type="button" id="confirm-clear">ยืนยัน Clear โต๊ะ</button>
+      </div>
+    </dialog>
+  </body>
+</html>

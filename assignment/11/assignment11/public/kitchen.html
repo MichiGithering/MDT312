@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="th">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Assignment 11 — ครัว</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- โหลด Socket.IO ก่อน kitchen.js และเริ่มผูก DOM ใน window.onload -->
+    <script src="/socket.io/socket.io.js" defer></script>
+    <script src="kitchen.js" defer></script>
+  </head>
+  <body data-page="kitchen">
+    <main class="single-page">
+      <h1 class="assignment-title">Assignment 11</h1>
+      <div id="message" class="notice" role="status" hidden></div>
+      <section class="kitchen">
+        <div class="section-title">
+          <div>
+            <p class="eyebrow">KITCHEN</p>
+            <h2>วันนี้ในครัว <span>👨‍🍳</span></h2>
+          </div>
+          <button id="refresh" class="refresh" aria-label="โหลดข้อมูลใหม่">↻</button>
+        </div>
+        <div id="stats" class="stats"></div>
+        <div class="queue-heading">
+          <h3>คิวออเดอร์</h3>
+          <span class="live-dot">● <span id="connection">กำลังเชื่อมต่อ</span></span>
+        </div>
+        <div class="filters" id="filters" role="group" aria-label="กรองสถานะ">
+          <button class="active" data-filter="all">ทั้งหมด</button
+          ><button data-filter="preparing">Preparing</button
+          ><button data-filter="cooking">Cooking</button
+          ><button data-filter="done">Done</button>
+        </div>
+        <div id="orders" class="kitchen-orders"></div>
+        <details class="history-panel">
+          <summary>
+            ◷ ประวัติออเดอร์ที่เสร็จแล้ว <span id="history-count">0 รายการ</span>
+          </summary>
+          <p>บันทึกเมื่อ Done เท่านั้น และยังอยู่หลัง Clear โต๊ะ</p>
+          <div id="order-history" class="history-list"></div>
+        </details>
+      </section>
+    </main>
+  </body>
+</html>
